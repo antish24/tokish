@@ -1,0 +1,14 @@
+.box{
+    width: 100vw;
+}
+.bottom{
+    display: none;
+}
+@media(max-width:670px){
+    .top{
+        display: none;
+    }
+    .bottom{
+        display: block;
+    }
+}

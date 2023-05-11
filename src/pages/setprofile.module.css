@@ -1,0 +1,57 @@
+.box{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    background-color: aliceblue;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(0,140,255);
+    border-radius: 10px;
+    gap: 10px;
+}
+.form .div{
+    width: 90%;
+}
+.form .div input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    border-bottom-color: rgb(0,140,255);
+    background-color: transparent;
+    width: 100%;
+}
+.form button{
+    border: none;
+    background: rgb(0, 0, 0);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+.form button:hover{
+    background: rgb(0,140,255);
+}
+.userimg{
+    display: flex;
+    width: 90%;
+}
+.userimg button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(0,140,255); 
+}
+.userimg button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

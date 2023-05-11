@@ -1,0 +1,58 @@
+.box{
+    width:250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6px;
+    background: black;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow:2px 2px 3px rgb(0,140,255);
+}
+.postinfo{
+    width: 100%;
+    height: 40px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.likes{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    gap: 3px;
+    color: rgb(0,140,255);
+}
+.comments{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: rgb(0,140,255);
+}
+.delete{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    color: rgb(199, 30, 30);
+}
+.box img{
+    width: 100%;
+    height: calc(100% - 40px);
+}
+.conform{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conform button{
+    margin-left: 5px;
+    padding: 0 10px;
+    border: none;
+}
+.conform button:hover ,button:active{
+    box-shadow:1px 1px white;
+}

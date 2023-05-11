@@ -1,0 +1,156 @@
+.box{
+    width: 100vw;
+    height: calc(100vh - 60px);
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filebox{
+    width:400px;
+    height: 500px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    color: rgb(0, 0, 0);
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 3px 8px black;
+}
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 60px;
+    color: rgb(0,140,255);
+}
+.mid{
+    width: 95%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed rgb(0,140,255);
+}
+.mid p{
+    text-align: center;
+}
+.mid button{
+    padding:  5px 10px;
+    border-radius: 3px;
+    background: rgb(0,140,255);
+    color: white;
+    border: none;
+}
+.mid button:hover{
+    background: rgba(0, 140, 255, 0.825);
+}
+.mid button:active{
+    background: rgba(0, 140, 255, 0.825);
+    box-shadow: 2px 2px black;
+}
+.bottom{
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.825);
+    box-shadow: 1px 2px 3px rgb(0, 136, 255);
+}
+.zfile{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 60px;
+    justify-content: space-evenly;
+    border: none;
+    background: none;
+}
+.zfile .filename{
+    width: 80%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 20px;
+    overflow: hidden;
+    padding: 1px 2px 3px 2px ;
+}
+.progress{
+    height: 10px;
+    width: 80%;
+    background: rgb(235, 235, 235);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.loaddone{
+    background: rgb(0,140,255);
+    width:98%;
+    height:4px;
+    animation:fileloaddone 2s linear ;
+    position: absolute;
+    left: 2px;
+    border-radius: 3px;
+}
+.load{
+    background: rgb(0,140,255);
+    width:58%;
+    height:4px;
+    animation:fileload 5s linear ;
+    position: absolute;
+    left: 2px;
+    border-radius: 3px;
+}
+.postbtn{
+    padding:  5px 40px;
+    border-radius: 3px;
+    background: rgb(0,140,255);
+    color: white;
+    border: none;
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.postbtnhover{
+    background: rgba(0, 140, 255, 0.825);
+}
+.postbtn:active{
+    background: rgba(0, 140, 255, 0.825);
+    box-shadow: 2px 2px black;
+}
+@keyframes fileloaddone {
+    0%{
+        width:58%;
+    }
+    100%{
+        width:85%;
+    }
+}
+@keyframes fileload {
+    0%{
+        width: 0;
+    }
+    100%{
+        width:50%;
+    }
+}
+@media(max-width:670px){
+    .box{
+        margin-bottom: 60px;
+        margin-top: 0;
+    }
+}
+@media(max-width:400px){
+    .filebox{
+        width: 95%;
+    }
+}
